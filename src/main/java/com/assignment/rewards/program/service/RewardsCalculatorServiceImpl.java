@@ -75,7 +75,7 @@ public class RewardsCalculatorServiceImpl implements RewardsCalculatorService {
 		if (transactionAmount > 100) {
 			rewardPoints = (Math.round(transactionAmount - 100) * 2) + 50;
 		} else if (transactionAmount > 50) {
-			rewardPoints = (Math.round(transactionAmount - 50) * 2);
+			rewardPoints = (Math.round(transactionAmount - 50) * 1);
 		}
 		return rewardPoints;
 	}
